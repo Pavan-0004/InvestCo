@@ -1,0 +1,210 @@
+* {
+	padding: 0;
+	margin: 0;
+	font-family: century gothic;
+	text-align: center;
+}
+
+form {
+	padding: 50px 20px;
+	background-color: #381b1ba6;
+	margin-left: 30%;
+	margin-right: 30%;
+	margin-top: 70px;
+	padding-top: 28px;
+	margin-bottom: 30px
+}
+.loginform {
+	padding: 50px 20px;
+	background-color: #381b1ba6;
+	margin-left: 50%;
+	margin-right: 10%;
+	margin-top: 70px;
+	padding-top: 28px;
+	margin-bottom: 30px;
+	
+}
+
+h1 {
+	text-align: center;
+	padding: 12px;
+	color: rgb(206, 203, 203)
+}
+
+input {
+	width: calc(100% - 20px);
+	padding: 9px;
+	margin: auto;
+	margin-top: 12px;
+	font-size: 16px
+}
+
+
+body {
+	background-image: url(fondolegal.jpg);
+	width: 100%;
+	height: 100%vh;
+	background-size: cover;
+	color: rgb(10, 12, 105);
+
+}
+
+.mensaje {
+	width: 100%;
+	max-width: 350px;
+	margin: auto;
+	margin-top: 20px;
+	text-align: left;
+	padding: 6px;
+	color: red;
+
+}
+
+header {
+	width: 100%;
+	color: #fff;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	align-content: space-between;
+	background-color: rgba(0, 0, 0, .3);
+}
+
+header h1 {
+	margin-left: 5px;
+	align-items: center;
+	width: calc(20% - 100px);
+	font-family: montez;
+	font-size: 55px;
+}
+
+.login-box {
+	background-image: url(logogae.png);
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	position: absolute;
+	top: -50px;
+	left: calc(50% - 50px);
+}
+
+@media only screen and (min-width:360px) and (max-width:757px) {
+	form {
+		padding: 50px 20px;
+		background-color: #381b1ba6;
+		margin-left: 5%;
+		margin-right: 5%;
+		margin-top: 70px;
+		padding-top: 28px;
+		margin-bottom: 30px;
+	
+	}
+
+	input {
+		width: calc(100% - 20px);
+		padding: 9px;
+		margin: auto;
+		margin-top: 12px;
+		font-size: 16px
+	}
+
+	body {
+		background-image: url(fondolegal.jpg);
+		max-width: 100%;
+		max-height: 200%;
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		color: white;
+
+	}
+
+}
+
+	caja {
+		margin-top:auto;
+	}
+
+	header h1 {
+		margin-left: 10px;
+		align-items: center;
+		width: calc(10% - 200px);
+		font-family: montez;
+		font-size: 80px;
+	}
+	
+	.container {
+		display: flex;
+		flex-wrap: wrap;
+	  }
+	  
+	  .left {
+		flex: 1;
+		margin-right: 20px;
+	  }
+	  
+	  .right {
+		flex: 1;
+		margin-left: 20px;
+		background-color: #381b1ba6;
+		margin-bottom: 30px
+	  }
+	  
+
+	table {
+		border-collapse: collapse;
+		width: 100%;
+	  }
+	  
+	  th, td {
+		text-align: left;
+		padding: 8px;
+		border-bottom: 1px solid #ddd;
+	  }
+	  
+	  th {
+		background-color: #f2f2f2;
+		font-weight: bold;
+	  }
+	  
+	  /* Define styles for specific columns */
+	  th.username {
+		width: 20%;
+	  }
+	  
+	  th.gold {
+		width: 20%;
+	  }
+	  
+	  th.petrol {
+		width: 20%;
+	  }
+	  
+	  th.btc {
+		width: 20%;
+	  }
+	  
+	  th.wheat {
+		width: 20%;
+	  }
+	  
+	  /* Apply styles to specific cells */
+	  td.username {
+		font-weight: bold;
+		color: #ffd700;
+	  }
+	  
+	  td.gold {
+		color: #ffd700;
+	  }
+	  
+	  td.petrol {
+		color: #ffd700;
+	  }
+	  
+	  td.btc {
+		color: #ffd700;
+	  }
+	  
+	  td.wheat {
+		color: #ffd700;
+	  }
