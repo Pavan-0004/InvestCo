@@ -12,10 +12,10 @@
 </head>
 
 <?php
-$host = "localhost";
-$dbusername = "root";
-$dbpassword = "";
-$dbname = "ashish";
+		$host = "localhost";
+        $dbusername = "metrolife_DB";
+        $dbpassword = "Coffee$1Time";
+        $dbname = "metrolife_DB";
 $conn = new mysqli($host, $dbusername, $dbpassword, $dbname);
 $sql = "SELECT * from login";
 $result = mysqli_query($conn, $sql);
@@ -28,10 +28,10 @@ $result = mysqli_query($conn, $sql);
 		<th colspan="5"></th> 
 		</tr> 
 			  <th class="username"> USERS </th> 
-              <th class="btc"> BTC</th>
-			  <th class="gold"> GOLD </th> 
-			  <th class="petrol"> PETROL </th> 
-			  <th class="wheat"> WHEAT </th> 
+              <th class="btc"> Gold</th>
+			  <th class="gold"> Farm </th> 
+			  <th class="petrol"> Oil </th> 
+			  <th class="wheat"> Pharmaceuticals </th> 
 			  
 		</tr> 
 		
@@ -41,9 +41,9 @@ $result = mysqli_query($conn, $sql);
 		<tr> 
         <td class="username"><?php echo $rows['username']; ?></td> 
         <td class="gold"><?php echo $rows['gold']; ?></td>
-		<td class="btc"><?php echo $rows['btc']; ?></td> 
-		<td class="petrol"><?php echo $rows['petrol']; ?></td> 
-		<td class="wheat"><?php echo $rows['wheat']; ?></td> 
+		<td class="btc"><?php echo $rows['farm']; ?></td> 
+		<td class="petrol"><?php echo $rows['oil']; ?></td> 
+		<td class="wheat"><?php echo $rows['pharmaceuticals']; ?></td> 
 		</tr> 
 	<?php 
         } 
@@ -57,9 +57,9 @@ $result = mysqli_query($conn, $sql);
             <h3 class="animate__animated animate__backInLeft">Investment System </h3>
             <p class="blanco">UserName <input type="text" placeholder="Enter  UserName" name="username" required></p>
             <p class="blanco">Change in Gold<input type="decimal" placeholder="Enter Change in Gold" name="cig" required></p>
-			<p class="blanco">Change in BTC<input type="decimal" placeholder="Enter Change in BTC" name="cib" required></p>
+			<p class="blanco">Change in Farm<input type="decimal" placeholder="Enter Change in Farm" name="cib" required></p>
 			<p class="blanco">Change in Petrol<input type="decimal" placeholder="Enter Change in Petrol" name="cip" required></p>
-			<p class="blanco">Change in Wheat<input type="decimal" placeholder="Enter Change in Wheat" name="ciw" required></p>
+			<p class="blanco">Change in pharmaceuticals<input type="decimal" placeholder="Enter Change in pharmaceuticals" name="ciw" required></p>
             <input class="btn btn-success" type="submit" value="Proceed" >
         </form>
 
