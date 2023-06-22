@@ -78,6 +78,22 @@ header h1 {
 	font-size: 55px;
 }
 
+.register-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.register-btn:hover {
+  background-color: #3e8e41;
+}
+
+
 .login-box {
 	background-image: url(logogae.png);
 	width: 100px;
@@ -87,6 +103,8 @@ header h1 {
 	top: -50px;
 	left: calc(50% - 50px);
 }
+
+
 
 @media only screen and (min-width:360px) and (max-width:757px) {
 	form {
