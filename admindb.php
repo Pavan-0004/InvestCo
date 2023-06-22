@@ -5,15 +5,15 @@ $cib = filter_input(INPUT_POST, 'cib');
 $cip = filter_input(INPUT_POST, 'cip');
 $ciw = filter_input(INPUT_POST, 'ciw');
         $host = "localhost";
-        $dbusername = "root";
-        $dbpassword = "";
-        $dbname = "ashish";
+        $dbusername = "metrolife_DB";
+        $dbpassword = "Coffee$1Time";
+        $dbname = "metrolife_DB";
     //creating a connection :
         $conn = new mysqli($host, $dbusername, $dbpassword, $dbname);
 
         
-            $sql = "UPDATE `login` SET `btc`=`btc`+$cib,`gold`=`gold`+$cig,`petrol`=`petrol`+$cip,
-            `wheat`=`wheat`+$ciw WHERE `username`= '$username'";
+            $sql = "UPDATE `login` SET `farm`=`farm`+$cib,`gold`=`gold`+$cig,`oil`=`oil`+$cip,
+            `pharmaceuticals`=`pharmaceuticals`+$ciw WHERE `username`= '$username'";
 
             if($conn->query($sql))
             {
